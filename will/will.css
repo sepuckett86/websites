@@ -32,4 +32,14 @@ body {
   h2.display-1{
     font-size: 12pt;
   }
+  
+
+@media screen and (min-width: 1200px) {
+  div {
+     font-size: 36px;
+  }
+  i{
+    font-size: 12pt;
+  }
+}
 }
