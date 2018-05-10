@@ -24,11 +24,11 @@ function changeClouds2() {
       index2 = 0;
     }
     let image2 = document.getElementById('cloud2');
-    if (cloudArray) {
+    if (cloudArray !== []) {
       image2.src = cloudArray[index2];
     } else {
       image2.src = "./images/3D_Cloud_movie/_movie00001.png";
     }
 
 }
-setInterval(function(){changeClouds2()}, 150);
+setInterval(function(){changeClouds2()}, 1500);
