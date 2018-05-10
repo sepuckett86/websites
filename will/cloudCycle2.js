@@ -1,5 +1,6 @@
 // List of images to cycle through
 const cloudArray = [];
+
 for (let i = 0; i < 96 ; i++) {
   const integerLength = String(i).length;
   const numberOfZeros = 5 - integerLength;
@@ -9,11 +10,15 @@ for (let i = 0; i < 96 ; i++) {
     stringToInsert = stringToInsert.concat(zero);
   }
   stringToInsert = stringToInsert.concat(String(i));
-  const url = `./images/3D_Cloud_movie/_movie${stringToInsert}.png`
-  cloudArray.push(url);
+  // for Github only
+  const gitHubUrl = `https://raw.githubusercontent.com/sepuckett86/websites/master/will/images/3D_Cloud_movie/_movie${stringToInsert}.png`
+  // const url = `./images/3D_Cloud_movie/_movie${stringToInsert}.png`
+  cloudArray.push(gitHubUrl);
 }
-for (k = 0; k < 20 ; k++) {
-  cloudArray.push("./images/3D_Cloud_movie/_movie00095.png");
+for (k = 0; k < 15 ; k++) {
+  // for Github only
+  cloudArray.push("https://raw.githubusercontent.com/sepuckett86/websites/master/will/images/3D_Cloud_movie/_movie00095.png");
+  // cloudArray.push("./images/3D_Cloud_movie/_movie00095.png");
 }
 
 let index2 = 0;
@@ -31,4 +36,4 @@ function changeClouds2() {
     }
 
 }
-setInterval(function(){changeClouds2()}, 1500);
+setInterval(function(){changeClouds2()}, 150);
