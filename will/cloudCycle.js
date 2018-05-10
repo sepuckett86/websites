@@ -11,6 +11,7 @@ const cloudList = [
 let index = 0;
 
 function changeClouds() {
+
     index++;
     if (index == cloudList.length) {
       index = 0;
