@@ -1,0 +1,21 @@
+header.masthead {
+  background-image: url("../img/cloud_pic.jpg");
+}
+
+#contact ul {
+  padding:0px;
+}
+
+#contact {
+	background: url("../img/cloud_pic.jpg") no-repeat center top;
+	/* background-color: #7bc3d1; */
+}
+
+#contact {
+	color: white;
+}
+
+footer {
+  color: grey;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
