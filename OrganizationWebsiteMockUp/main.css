@@ -1,0 +1,12 @@
+.carousel-img {
+  filter:brightness(70%);
+}
+
+.carousel-item {
+
+  max-height: 25rem;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
