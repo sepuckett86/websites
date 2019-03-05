@@ -1,0 +1,195 @@
+	body {
+	margin-left:		 auto;
+	margin-right:		 auto;
+	width:				786px;
+	font-family: 		Arial, Helvetica, sans-serif;
+	font-size:			0.725em;
+	color: 				#000000;
+	height:				100%;
+	background-image: 	url(bg_montagna.gif);
+	background-repeat:	repeat-x;
+	letter-spacing: normal;
+	vertical-align: baseline;
+	word-spacing: normal;
+	background-color: #FFF;
+	}
+		
+	a {
+		color: 				#225b95;			 /* blue */
+		text-decoration: 	none;					
+	} 
+	
+	a:hover, a:active {
+	color: 				#090;
+	text-decoration: 	underline;
+	font-family: Arial, Helvetica, sans-serif;
+	} 
+	
+	img {
+		border:				0;		
+	}	
+	
+	ul  {
+		margin-left: 		0;		
+		margin-top: 		8px;
+		list-style-type: 	disc;
+		padding-left: 		1.5em;
+		text-indent: 		.125em;					
+	}
+	
+	li {
+		margin-bottom: 		6px;	
+		padding-left: 		0;						
+	}
+
+ /* ********************************************************************************
+		GENERAL 
+    ******************************************************************************** */
+	.main_title,  .sub_title {
+		color: 				#387C2B;			/* dark green */	
+		margin-top: 		10px;
+		margin-bottom:		10px;
+	}
+	.main_title {
+		font-size: 			1.4em;
+	}
+	.sub_title {
+	font-size: 			1.2em;
+	color: #000;
+	}
+	
+
+/* 	*********************************************************************************************
+									TOP CONTENT 
+	*********************************************************************************************	*/ 
+	#topcontent {
+		float: 				center;
+		width:				786px;		
+		height:				75px;
+		vertical-align:		top;
+	}
+
+	#topnav {
+		float: 				center;
+		width:				776px;
+		padding-top:		25px;
+		padding-left:		10px;		
+		height:				25px;
+	}
+
+
+ /* ********************************************************************************
+			LEFT COLUMN
+    ******************************************************************************** */
+	#leftcontent {
+		float:				left;
+		width:  			168px;
+		background:			#DBE8C4; 			/* light green */
+		border-left:		1px solid #cccccc;
+		border-right:		1px solid #cccccc;
+		border-top:			1px solid #cccccc;
+		height:				4000px;				/* a bit of a hack to make sure left col is long enough */ 
+	}
+	
+	#leftcontent ul {
+		list-style-image: 	url(blt_main.gif);		/* blue arrow */
+		padding-bottom:		.5em;			
+	}
+
+				
+	#leftcontent .sub_title {
+		margin-top: 		0px;			/* get top margin right */
+	}
+	
+	/* for left boxes */
+	.leftbox {
+		border-bottom:		1px solid #cccccc;
+		padding:			10px 4px 15px 8px;	/* top, right, bottom, left */
+		font-size:			.9em;
+	}  
+	
+	/* Title box has different alignment and smaller top/bottom padding */
+	#montagna_title .leftbox  {
+		vertical-align:		middle;  
+		padding:			5px 4px 5px 8px;	/* top, right, bottom, left */
+	}  
+			
+	
+	
+		
+ /* ********************************************************************************
+		MAIN SECTION 
+    ******************************************************************************** */
+	#maincontent {
+		width:				616px;	
+		float:				right;	
+	}	
+	
+	.main_image {
+		width:				615px;
+		border-right:		1px solid #cccccc;
+		float: 				left;			 
+	}	
+	
+
+ /* ********************************************************************************
+		MAIN SECTION - TWO EQUAL COLUMN
+    ******************************************************************************** */		
+	#main-right, #main-left {
+		padding-top: 		15px; 		
+		padding-left:		15px;
+		padding-right:		15px;
+		padding-bottom: 	30px;
+		border-top:			1px solid #cccccc;	
+		width:				277px;	
+	}
+			
+	#main-left {	
+		float: 				left;
+	}
+		
+	#main-right {	
+		border-left:		1px solid #cccccc;	
+		border-right:		1px solid #cccccc;	
+		float: 				right;				
+	}
+
+
+ /* ********************************************************************************
+		MAIN SECTION - ONE COLUMN
+    ******************************************************************************** */		
+	#main-col {
+	padding-top: 		15px;
+	padding-left:		15px;
+	padding-right:		15px;
+	padding-bottom: 	30px;
+	border-top:			1px solid #cccccc;
+	border-right:		1px solid #cccccc;
+	width:				585px;
+	float: 				right;
+	color: #000;
+	background-color: #FFF;
+	text-align: left;
+	}
+.blk {
+	color: #000;
+}
+.blk {
+	color: #000;
+}
+.blk {
+	color: #000;
+}
+.blk {
+	color: #000;
+	font-size: small;
+}
+.825 {
+	font-size: small;
+}
+.small {
+	font-size: small;
+}
+.small {
+	font-size: small;
+}
