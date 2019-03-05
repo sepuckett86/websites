@@ -1,0 +1,51 @@
+#topcontent {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  color: #146143;
+  border-bottom: solid 5px #146143
+}
+
+#topcontent h1 {
+  margin: 0px;
+}
+
+#main-content {
+  padding: 0px;
+}
+
+#main-col {
+  padding: 20px;
+}
+
+footer {
+  background: #D0DFD9;
+}
+
+.footer-content {
+  padding: 20px;
+}
+
+.josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+aside {
+  border-right: solid 5px #146143
+}
+
+.navbar-brand-custom {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: normal;
+  color: #fff;
+}
+
+.navbar-brand-custom:hover, .navbar-brand-custom:focus {
+  text-decoration: none;
+  color: #fff;
+}
