@@ -1,0 +1,85 @@
+/*
+Black: #2B2B2B;
+Light Black Hover: rgba(0, 0, 0, 0.7);
+*/
+
+html {
+  background-color: #F1F2F2;
+}
+
+#masthead {
+  text-align: center;
+  background-color: #F1F2F2;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  font-family: sans-serif;
+}
+
+.navbar-background {
+  background-color: #F1F2F2;
+}
+
+.navbar-brand {
+  height: 60px;
+}
+
+.founder-button {
+  color: #F1F2F2;
+  display: block;  /* nav-link css */
+  padding: 0.5rem 1rem; /* nav-link css */
+  background-color: #43A858;
+  border-radius: 10px;
+  box-shadow: 0 4px #999;
+}
+
+.founder-button:hover {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none; /* Prevent underlining on hover */
+}
+
+.founder-button:active {
+  color: #F1F2F2;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px); /* Moves button in down press */
+}
+
+.carousel-row {
+  height: 300px;
+}
+.carousel-one {
+  background-color: green;
+}
+
+.carousel-one .column-1 {
+
+}
+
+.carousel-one .column-2 {
+  background-image: url("../images/cloud_wave_shore.png")
+}
+
+.carousel-two {
+  background-color: purple;
+}
+
+.carousel-two .column-1 {
+
+}
+
+.carousel-two .column-2 {
+  background-image: url("../images/cloud_wave_shore.png")
+}
+
+.carousel-three {
+  background-color: pink;
+}
+
+.carousel-three .column-1 {
+
+}
+
+.carousel-three .column-2 {
+  background-image: url("../images/cloud_wave_shore.png")
+}
