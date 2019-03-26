@@ -1,5 +1,6 @@
 /*
 Black: #2B2B2B;
+Lightish: #F1F2F2;
 Light Black Hover: rgba(0, 0, 0, 0.7);
 Logo green: #43A858;
 */
@@ -71,17 +72,23 @@ body {
 }
 
 .carousel-one {
-  background-color: green;
+  background-color: #43A858;
 }
 
 .carousel-row .column-1 {
-  height: 100%;
+  height: 30rem;
+  object-fit: cover;
   width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .carousel-row .column-2 {
   height: 100%;
-  width: 100%;
+  /* Vertical Align Text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-one .column-2 {
