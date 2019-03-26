@@ -64,8 +64,8 @@
           </div>
       </nav>
     </header>
-    <section id="masthead">
-
+    <section id="masthead" class="d-md-none">
+      <img src="images/bsfMasthead.png" alt="BSF_masthead" width="100%" />
     </section>
     <section>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -76,27 +76,62 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item carousel-one active" data-interval="10000">
-            <div class="row carousel-row">
-              <div class="col col-12 col-md-4 column-1">
-                <img src="images/Montagna_color.png" alt="Montagna_color" width="100%" />
-              </div>
-              <div class="col col-12 col-md-8 column-2">
-                <p class="lead">
+
+              <!-- SMALL SCREEN -->
+              <div class="d-sm-block d-md-none carousel-row">
+                <p class="centered lead d-md-none">
                   "Without a full understanding of gross structure,
                   observations in ultrastructure and molecular
                   biology are unintelligible."
                   <br />
                   -- Bill Montagna
                 </p>
+                <div class="column-1">
+                  <img src="images/Montagna_color.png" alt="Montagna_color" width="100%" />
+                </div>
               </div>
-            </div>
+
+              <!-- LARGE SCREEN -->
+              <div class="d-none d-md-block">
+                <div class="row carousel-row">
+                <div class="col col-md-4 column-1">
+                  <img src="images/Montagna_color.png" alt="Montagna_color" width="100%" />
+                </div>
+                <div class="col col-md-8 column-2">
+                  <p class="lead">
+                    "Without a full understanding of gross structure,
+                    observations in ultrastructure and molecular
+                    biology are unintelligible."
+                    <br />
+                    -- Bill Montagna
+                  </p>
+                </div>
+                </div>
+              </div>
+
           </div>
           <div class="carousel-item carousel-two" data-interval="10000">
-            <div class="row carousel-row">
-              <div class="col col-12 col-md-4 column-1">
+
+            <!-- SMALL SCREEN -->
+            <div class="d-sm-block d-md-none carousel-row">
+              <p class="centered lead d-md-none">
+                "Structure and function are not two sides of a single
+                 coin; they are the very substance of that coin."
+                <br />
+                -- Bill Montagna
+              </p>
+              <div class="column-1">
                 <img src="images/Montagna_monkey.png" alt="Montagna_color" width="100%" />
               </div>
-              <div class="col col-12 col-md-8 column-2">
+            </div>
+
+            <!-- LARGE SCREEN -->
+            <div class="d-none d-md-block">
+              <div class="row carousel-row">
+              <div class="col col-md-4 column-1">
+                <img src="images/Montagna_monkey.png" alt="Montagna_color" width="100%" />
+              </div>
+              <div class="col col-md-8 column-2">
                 <p class="lead">
                   "Structure and function are not two sides of a single
                    coin; they are the very substance of that coin."
@@ -104,14 +139,35 @@
                   -- Bill Montagna
                 </p>
               </div>
+              </div>
             </div>
+
           </div>
           <div class="carousel-item carousel-three" data-interval="10000">
-            <div class="row carousel-row">
-              <div class="col col-12 col-md-4 column-1">
 
+            <!-- SMALL SCREEN -->
+            <div class="d-sm-block d-md-none carousel-row">
+              <p class="centered lead d-md-none">
+                "There was in those early 1940s a small group of young dermatologists
+                who were curious about the skin itself...We all found Bill Montagna
+                and that was the way this began in 1950, because almost
+                immediately this small group decided it was a good idea to sit down
+                together and just talk about the skin."
+                <br />
+                -- Wally Lobitz
+              </p>
+              <div class="column-1">
+                <img src="images/Montagna_color.png" alt="Montagna_color" width="100%" />
               </div>
-              <div class="col col-12 col-md-8 column-2">
+            </div>
+
+            <!-- LARGE SCREEN -->
+            <div class="d-none d-md-block">
+              <div class="row carousel-row">
+              <div class="col col-md-4 column-1">
+                <img src="images/Montagna_color.png" alt="Montagna_color" width="100%" />
+              </div>
+              <div class="col col-md-8 column-2">
                 <p class="lead">
                   "There was in those early 1940s a small group of young dermatologists
                   who were curious about the skin itself...We all found Bill Montagna
@@ -121,6 +177,7 @@
                   <br />
                   -- Wally Lobitz
                 </p>
+              </div>
               </div>
             </div>
           </div>

@@ -9,10 +9,9 @@
     height: 60vh;
   }
   .carousel-row .column-1 {
-    height: 60%;
+    filter: brightness(50%);
   }
   .carousel-row .column-2 {
-    height: 40%;
     color: #F1F2F2;
     background-image: none;
     background-color: #2B2B2B;
