@@ -11,16 +11,6 @@
   .carousel-row .column-1 {
     filter: brightness(50%);
   }
-  .carousel-row .column-2 {
-    color: #F1F2F2;
-    background-image: none;
-    background-color: #2B2B2B;
-    /* Undo vertial centering */
-    display: in-line;
-    align-items: none;
-    justify-content: none;
-    padding: 30px;
-  }
  }
 
 /* Navbar switches to collapsed */
