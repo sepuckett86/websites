@@ -92,5 +92,4 @@ body {
 .column-2 {
   /* makes bg more transparent without also doing that to text */
   background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/cloud_wave_shore.png");
-  background-attachment: fixed;
 }
