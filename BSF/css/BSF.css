@@ -70,17 +70,12 @@ body {
   outline: none;
 }
 
-.carousel-row {
-  height: 30vw;
-  background-color: #F1F2F2;
-}
-
-.carousel-row .column-1 {
+.carousel-large .column-1 {
   padding-right: 0px;
   padding-left: 0px;
 }
 
-.carousel-row .column-2 {
+.carousel-large .column-2 {
   height: 100%;
   /* Vertical Align Text */
   display: flex;
@@ -89,10 +84,25 @@ body {
   padding-right: 50px;
 }
 
+.carousel-small {
+  padding-right: 0px;
+  padding-left: 0px;
+  height: 60vh;
+  background-color: #F1F2F2;
+}
+
+.carousel-large {
+  height: 30vw;
+  background-color: #F1F2F2;
+}
+
+
 .column-2 {
   /* makes bg more transparent without also doing that to text */
   background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/cloud_wave_shore.png");
+  background-size: cover;
 }
+
 
 /*
 Place text over an image in the center
