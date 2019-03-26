@@ -10,32 +10,163 @@
     <!-- Bootstrap 4.3 requires this meta tag for responsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Favicon link -->
+    <link href="images/favicon.png" type="image/png" rel="icon" />
+
     <!-- Link to CSS stylesheets -->
     <link href="css/BSF.css" type="text/css" rel="stylesheet" />
+    <link href="css/responsive.css" type="text/css" rel="stylesheet" />
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
+      <nav class="navbar navbar-expand-lg navbar-background navbar-light fixed-top">
+          <div class="d-flex flex-grow-1">
+              <!-- OPTIONAL spacer to center brand on mobile
+              <span class="w-100 d-lg-none d-block">
+              </span>
+              -->
+              <a class="navbar-brand" href="#">
+                  <img src="images/favicon.png" alt="BSF_favicon" height="100%"/>
+                  <img src="images/bsfMasthead.png" alt="BSF_masthead" height="100%" />
+              </a>
+              <div class="w-100 text-right">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bsf_navbar">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+              </div>
+          </div>
+          <div class="collapse navbar-collapse flex-grow-1 text-right" id="bsf_navbar">
+              <ul class="navbar-nav ml-auto flex-nowrap ">
+                  <!-- Only show button at top of list in collapsed format -->
+                  <li class="nav-item d-md-block d-lg-none">
+                    <button class="float-right founder-button">Become a Founder</button>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Mission</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Symposium</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Donate</a>
+                  </li>
+                  <!-- Only show button at end of list in large screen de-collapsed -->
+                  <li class="nav-item d-none d-lg-block d-xl-block">
+                    <button class="founder-button">Become a Founder</button>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+    <section id="masthead">
+
+    </section>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-one active" data-interval="10000">
+            <div class="row carousel-row">
+              <div class="col col-12 col-md-4 column-1">
+                <img src="images/Montagna_color.png" alt="Montagna_color" width="100%" />
+              </div>
+              <div class="col col-12 col-md-8 column-2">
+                <p class="lead">
+                  "Without a full understanding of gross structure,
+                  observations in ultrastructure and molecular
+                  biology are unintelligible."
+                  <br />
+                  -- Bill Montagna
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-two" data-interval="10000">
+            <div class="row carousel-row">
+              <div class="col col-12 col-md-4 column-1">
+                <img src="images/Montagna_monkey.png" alt="Montagna_color" width="100%" />
+              </div>
+              <div class="col col-12 col-md-8 column-2">
+                <p class="lead">
+                  "Structure and function are not two sides of a single
+                   coin; they are the very substance of that coin."
+                  <br />
+                  -- Bill Montagna
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-three" data-interval="10000">
+            <div class="row carousel-row">
+              <div class="col col-12 col-md-4 column-1">
+
+              </div>
+              <div class="col col-12 col-md-8 column-2">
+              </div>
+            </div>
           </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </header>
-    <section class="container">
-      <p>Section</p>
     </section>
-    <footer class="container">
-      <p>Footer</p>
-    </footer>
+    <section>
+      <div class="container">
+        <br  />
+        <h1>BECOME A FOUNDER</h1>
+        <p>
+          CONTENT
+        </p>
+        <br  />
+      </div>
+    </section>
+    <section id="footer">
+      <div class=container>
+        <div class="row">
+          <div class="col col-12 col-md-4">
+            <p>
+              Name Name
+              <br />
+              Address Address
+              <br />
+              Address Address
+              <br />
+              +1 (555) 555 5555
+              <br />
+              Facebook
+            </p>
+
+          </div>
+          <div class="col col-12 col-md-4" >
+            <div style="max-width: 300px">
+                <img src="images/favicon.png" alt="BSF_logo" width="100%" />
+            </div>
+          </div>
+          <div class="col col-12 col-md-4" style="text-align: right">
+            <p>
+              More Info
+              <br />
+            </p>
+            <button class="founder-button float-right">Register for the Symposium</button>
+          </div>
+        </div>
+        <div class="center">
+          <hr />
+          &copy Copyright 2019 The Biology of Skin
+        </div>
+      </div>
+    </section>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.js"></script>

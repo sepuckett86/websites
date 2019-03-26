@@ -1,0 +1,35 @@
+
+/* md-breakpoint */
+@media (max-width: 768px) {
+  .carousel-row {
+    height: 60vh;
+  }
+  .carousel-row .column-1 {
+    height: 60%;
+  }
+  .carousel-row .column-2 {
+    height: 40%;
+    color: #F1F2F2;
+    background-image: none;
+    background-color: #2B2B2B;
+    /* Undo vertial centering */
+    display: in-line;
+    align-items: none;
+    justify-content: none;
+    padding: 30px;
+  }
+ }
+
+/* Navbar switches to collapsed */
+@media (max-width: 992px) {
+  body {
+    padding-top: 58px;
+  }
+  .navbar-brand {
+    height: 45px;
+  }
+  .founder-button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
