@@ -26,9 +26,14 @@
               <span class="w-100 d-lg-none d-block">
               </span>
               -->
-              <a class="navbar-brand" href="#">
+              <!-- For phone size (small)-->
+              <a class="navbar-brand d-sm-block d-md-none" href="#">
                   <img src="images/favicon.png" alt="BSF_favicon" height="100%"/>
-                  <img src="images/bsfMasthead.png" alt="BSF_masthead" height="100%" />
+              </a>
+              <!-- For intermediate (medium)-->
+              <a class="navbar-brand d-none d-md-block" href="#">
+                  <img src="images/favicon.png" alt="BSF_favicon" height="100%"/>
+                  <img src="images/bsfMasthead.png" alt="BSF_masthead" height="87%" />
               </a>
               <div class="w-100 text-right">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bsf_navbar">
@@ -38,7 +43,7 @@
           </div>
           <div class="collapse navbar-collapse flex-grow-1 text-right" id="bsf_navbar">
               <ul class="navbar-nav ml-auto flex-nowrap ">
-                  <!-- Only show button at top of list in collapsed format -->
+                  <!-- Only show button at top of list in collapsed format (small)-->
                   <li class="nav-item d-md-block d-lg-none">
                     <button class="float-right founder-button">Become a Founder</button>
                   </li>
@@ -51,7 +56,7 @@
                   <li class="nav-item">
                       <a href="#" class="nav-link">Donate</a>
                   </li>
-                  <!-- Only show button at end of list in large screen de-collapsed -->
+                  <!-- Only show button at end of list in large screen de-collapsed (large)-->
                   <li class="nav-item d-none d-lg-block d-xl-block">
                     <button class="founder-button">Become a Founder</button>
                   </li>
@@ -107,6 +112,15 @@
 
               </div>
               <div class="col col-12 col-md-8 column-2">
+                <p class="lead">
+                  "There was in those early 1940s a small group of young dermatologists
+                  who were curious about the skin itself...We all found Bill Montagna
+                  and that was the way this began in 1950, because almost
+                  immediately this small group decided it was a good idea to sit down
+                  together and just talk about the skin."
+                  <br />
+                  -- Wally Lobitz
+                </p>
               </div>
             </div>
           </div>
