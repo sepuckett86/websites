@@ -1,0 +1,29 @@
+
+/* md-breakpoint */
+@media (max-width: 768px) {
+  .carousel-row {
+    height: 50vh;
+  }
+  .carousel-row .column-1 {
+    height: 70%;
+  }
+  .carousel-row .column-2 {
+    height: 30%;
+    background-image: none;
+    background-color: #2B2B2B;
+  }
+ }
+
+/* Navbar switches to collapsed */
+@media (max-width: 992px) {
+  body {
+    padding-top: 58px;
+  }
+  .navbar-brand {
+    height: 42px;
+  }
+  .founder-button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
