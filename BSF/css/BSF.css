@@ -38,7 +38,7 @@ body {
 }
 
 .navbar-brand {
-  height: 60px;
+  height: 70px;
 }
 
 .founder-button {
@@ -69,10 +69,7 @@ body {
 
 .carousel-row {
   height: 30vw;
-}
-
-.carousel-one {
-  background-color: #43A858;
+  background-color: #F1F2F2;
 }
 
 .carousel-row .column-1 {
@@ -89,32 +86,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 50px;
 }
 
-.carousel-one .column-2 {
-  background-image: url("../images/cloud_wave_shore.png")
-}
-
-.carousel-two {
-  background-color: purple;
-}
-
-.carousel-two .column-1 {
-
-}
-
-.carousel-two .column-2 {
-  background-image: url("../images/cloud_wave_shore.png")
-}
-
-.carousel-three {
-  background-color: pink;
-}
-
-.carousel-three .column-1 {
-
-}
-
-.carousel-three .column-2 {
-  background-image: url("../images/cloud_wave_shore.png")
+.column-2 {
+  /* makes bg more transparent without also doing that to text */
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/cloud_wave_shore.png");
+  background-attachment: fixed;
 }
