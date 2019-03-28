@@ -28,10 +28,6 @@ body {
   padding: 30px;
 }
 
-.center {
-  text-align: center;
-}
-
 .navbar {
   font-family: sans-serif;
 }
@@ -123,4 +119,16 @@ Do not include image in same div as text -- put text outside of image div
   color: #fff;
   text-align: center;
   transition: opacity 0.15s ease;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.light-hr {
+  border-top: 1px solid #F1F2F2;
 }
