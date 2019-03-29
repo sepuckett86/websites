@@ -3,6 +3,8 @@ Black: #2B2B2B;
 Lightish: #F1F2F2;
 Light Black Hover: rgba(0, 0, 0, 0.7);
 Logo green: #43A858;
+Logo blue: #62BFB7;
+Logo Yellow: #EDCD61;
 */
 
 html {
@@ -20,6 +22,19 @@ body {
   padding-bottom: 3%;
   padding-left: 1%;
   padding-right: 1%;
+}
+
+#who {
+  background-color: #62BFB7;
+  text-align: center;
+}
+
+#who img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
 }
 
 #footer {
