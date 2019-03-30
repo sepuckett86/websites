@@ -92,12 +92,12 @@ body {
 
 .founder-button {
   color: #F1F2F2;
-  display: block;  /* nav-link css */
-  padding: 0.5rem 1rem; /* nav-link css */
   background-color: #43A858;
   border-radius: 10px;
   box-shadow: 2px 4px 2px #999;
   border: none;
+  display: block;  /* nav-link css */
+  padding: 0.5rem 1rem; /* nav-link css */
 }
 
 .founder-button:hover {
