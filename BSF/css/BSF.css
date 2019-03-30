@@ -3,6 +3,9 @@ Black: #2B2B2B;
 Lightish: #F1F2F2;
 Light Black Hover: rgba(0, 0, 0, 0.7);
 Logo green: #43A858;
+Logo blue: #62BFB7;
+Logo Yellow: #EDCD61;
+Logo bottom green: #61912D;
 */
 
 html {
@@ -10,7 +13,7 @@ html {
 }
 
 body {
-  padding-top: 76px;
+  padding-top: 76px; /* Space for fixed navbar */
 }
 
 #masthead {
@@ -20,6 +23,48 @@ body {
   padding-bottom: 3%;
   padding-left: 1%;
   padding-right: 1%;
+}
+
+#home_carousel .carousel-large .column-1 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#home_carousel .carousel-large .column-2 {
+  height: 100%;
+  /* Vertical Align Text */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* makes bg more transparent without also doing that to text */
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/cloud_wave_shore.png");
+  background-size: cover;
+  padding: 3%;
+}
+
+#home_carousel .carousel-small {
+  padding-right: 0px;
+  padding-left: 0px;
+  height: 60vh;
+  background-color: #F1F2F2;
+}
+
+#home_carousel .carousel-large {
+  height: 30vw;
+  background-color: #F1F2F2;
+}
+
+#who {
+  background-color: #62BFB7;
+  text-align: center;
+}
+
+#who img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
 }
 
 #footer {
@@ -40,14 +85,19 @@ body {
   height: 70px;
 }
 
+.navbar-brand .favicon {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+  border-radius: 50%;
+}
+
 .founder-button {
   color: #F1F2F2;
-  display: block;  /* nav-link css */
-  padding: 0.5rem 1rem; /* nav-link css */
   background-color: #43A858;
   border-radius: 10px;
   box-shadow: 2px 4px 2px #999;
   border: none;
+  display: block;  /* nav-link css */
+  padding: 0.5rem 1rem; /* nav-link css */
 }
 
 .founder-button:hover {
@@ -65,40 +115,6 @@ body {
 .founder-button:focus {
   outline: none;
 }
-
-.carousel-large .column-1 {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-.carousel-large .column-2 {
-  height: 100%;
-  /* Vertical Align Text */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 50px;
-}
-
-.carousel-small {
-  padding-right: 0px;
-  padding-left: 0px;
-  height: 60vh;
-  background-color: #F1F2F2;
-}
-
-.carousel-large {
-  height: 30vw;
-  background-color: #F1F2F2;
-}
-
-
-.column-2 {
-  /* makes bg more transparent without also doing that to text */
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/cloud_wave_shore.png");
-  background-size: cover;
-}
-
 
 /*
 Place text over an image in the center
