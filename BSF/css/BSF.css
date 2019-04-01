@@ -10,10 +10,21 @@ Logo bottom green: #61912D;
 
 html {
   background-color: #F1F2F2;
+  scroll-behavior: smooth;
 }
 
 body {
   padding-top: 76px; /* Space for fixed navbar */
+  scroll-snap-type: y proximity;
+}
+
+section {
+  margin: 0px;
+  background-color: #F1F2F2;
+}
+
+.scroll-snap {
+  scroll-snap-align: start;
 }
 
 #masthead {
@@ -54,8 +65,12 @@ body {
   background-color: #F1F2F2;
 }
 
+#symposium {
+  background-color: #78bfb7;
+}
+
 #who {
-  background-color: #62BFB7;
+  background-color: #F1F2F2;
   text-align: center;
 }
 
@@ -73,8 +88,20 @@ body {
   padding: 30px;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
 .navbar {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.scrolled-nav {
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, .2);
 }
 
 .navbar-background {
@@ -86,7 +113,6 @@ body {
 }
 
 .navbar-brand .favicon {
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
   border-radius: 50%;
 }
 
@@ -147,4 +173,12 @@ Do not include image in same div as text -- put text outside of image div
 
 .light-hr {
   border-top: 1px solid #F1F2F2;
+}
+
+/* To account for navbar while scrolling */
+.anchor {
+  display: block;
+  height: 76px; /*same height as header*/
+  margin-top: -76px; /*same height as header*/
+  visibility: hidden;
 }
