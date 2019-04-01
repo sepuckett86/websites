@@ -15,10 +15,15 @@ html {
 
 body {
   padding-top: 76px; /* Space for fixed navbar */
+  scroll-snap-type: y proximity;
 }
 
 section {
   margin: 0px;
+}
+
+.scroll-snap {
+  scroll-snap-align: start;
 }
 
 #masthead {
@@ -64,7 +69,7 @@ section {
 }
 
 #who {
-  background-color: #5ca578;
+  background-color: #F1F2F2;
   text-align: center;
 }
 
@@ -159,4 +164,12 @@ Do not include image in same div as text -- put text outside of image div
 
 .light-hr {
   border-top: 1px solid #F1F2F2;
+}
+
+/* To account for navbar while scrolling */
+.anchor {
+  display: block;
+  height: 76px; /*same height as header*/
+  margin-top: -76px; /*same height as header*/
+  visibility: hidden;
 }
