@@ -11,6 +11,13 @@
   .carousel-row .column-1 {
     filter: brightness(50%);
   }
+  /* To account for navbar while scrolling */
+  .anchor {
+    display: block;
+    height: 80px; /* same height as header plus extra space */
+    margin-top: -80px; /* same height as header plus extra space */
+    visibility: hidden;
+  }
  }
 
 /* Navbar switches to collapsed */
