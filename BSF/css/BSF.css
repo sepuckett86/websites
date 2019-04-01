@@ -66,7 +66,11 @@ section {
 }
 
 #symposium {
-  background-color: #78bfb7;
+  background-color: #F1F2F2;;
+}
+
+#donate {
+  background-color: #F1F2F2;;
 }
 
 #who {
@@ -119,16 +123,22 @@ p {
 .founder-button {
   color: #F1F2F2;
   background-color: #43A858;
+  font-family: 'Raleway', sans-serif;
   border-radius: 10px;
   box-shadow: 2px 4px 2px #999;
   border: none;
-  display: block;  /* nav-link css */
   padding: 0.5rem 1rem; /* nav-link css */
+  text-align: center;
+  display: inline-block; /* Prevents weird spacing */
 }
 
 .founder-button:hover {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none; /* Prevent underlining on hover */
+}
+
+.founder-button:focus {
+  outline: none;
 }
 
 .founder-button:active {
@@ -138,9 +148,7 @@ p {
   transform: translateY(2px); /* Moves button in down press */
 }
 
-.founder-button:focus {
-  outline: none;
-}
+
 
 /*
 Place text over an image in the center
@@ -178,7 +186,7 @@ Do not include image in same div as text -- put text outside of image div
 /* To account for navbar while scrolling */
 .anchor {
   display: block;
-  height: 76px; /*same height as header*/
-  margin-top: -76px; /*same height as header*/
+  height: 100px; /* same height as header plus extra space */
+  margin-top: -100px; /* same height as header plus extra space */
   visibility: hidden;
 }
