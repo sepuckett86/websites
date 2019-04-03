@@ -89,7 +89,8 @@ section {
 #footer {
   color: #43A858;
   background-color: #2B2B2B;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 h1, h2, h3, h4 {
@@ -148,7 +149,36 @@ p {
   transform: translateY(2px); /* Moves button in down press */
 }
 
+.accordion-button {
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  width: 100%;
+}
 
+.accordion-button:hover {
+  text-decoration: none; /* Prevent underlining on hover */
+  background-color: #d1d1d1;
+  border-radius: 10px;
+}
+
+.accordion-button:focus {
+  outline: none;
+}
+
+.accordion-button:active {
+  text-decoration: none; /* Prevent underlining on hover */
+  outline: none;
+  border: none;
+}
+
+.card {
+  border-radius: 10px!important;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0px 0px!important;
+}
 
 /*
 Place text over an image in the center
@@ -176,7 +206,7 @@ Do not include image in same div as text -- put text outside of image div
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .light-hr {

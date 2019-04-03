@@ -12,12 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon link -->
-    <link href="images/favicon.png" type="image/png" rel="icon" />
+    <link href="images/favicon_borderless.png" type="image/png" rel="icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <!-- Link to CSS stylesheets -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
     <link href="css/BSF.css" type="text/css" rel="stylesheet" />
     <link href="css/responsive.css" type="text/css" rel="stylesheet" />
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -29,12 +33,12 @@
               -->
               <!-- For phone size (small)-->
               <a class="navbar-brand d-sm-block d-md-none" href="index.html">
-                  <img src="images/favicon.png" alt="BSF_favicon" height="100%"/>
+                  <img class="favicon" src="images/favicon_borderless.png" alt="BSF_favicon" height="100%"/>
               </a>
               <!-- For intermediate (medium)-->
               <a class="navbar-brand d-none d-md-block" href="index.html">
-                  <img src="images/favicon.png" alt="BSF_favicon" height="100%"/>
-                  <img src="images/bsfMasthead.png" alt="BSF_masthead" height="87%" />
+                  <img class="favicon" src="images/favicon_borderless.png" alt="BSF_favicon" height="100%"/>
+                  <img class="masthead-height" src="images/bsfMasthead.png" alt="BSF_masthead" />
               </a>
               <div class="w-100 text-right">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bsf_navbar">
@@ -45,17 +49,17 @@
           <div class="collapse navbar-collapse flex-grow-1 text-right" id="bsf_navbar">
               <ul class="navbar-nav ml-auto flex-nowrap ">
                   <!-- Only show button at top of list in collapsed format (small)-->
-                  <li class="nav-item d-md-block d-lg-none">
+                  <li class="nav-item d-md-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a href="founder.html" class="float-right founder-button">Become a Founder</a>
                   </li>
-                  <li class="nav-item">
-                      <a href="mission.html" class="nav-link">Mission</a>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                      <a href="index.html#mission-anchor" class="nav-link">Mission</a>
                   </li>
-                  <li class="nav-item">
-                      <a href="symposium.html" class="nav-link">Symposium</a>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                      <a href="index.html#symposium-anchor" class="nav-link">Symposium</a>
                   </li>
-                  <li class="nav-item">
-                      <a href="donate.html" class="nav-link">Donate</a>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"s>
+                      <a href="index.html#donate-anchor" class="nav-link">Donate</a>
                   </li>
 
                   <!-- Only show button at end of list in large screen de-collapsed (large)-->
@@ -69,7 +73,9 @@
     <section id="masthead" class="d-md-none">
       <img src="images/bsfMasthead.png" alt="BSF_masthead" width="100%" />
     </section>
-
+    <section id="founder-hero">
+      
+    </section>
     <section>
       <div class="container">
         <br  />
@@ -78,37 +84,40 @@
         <p>
           CONTENT
         </p>
-        <br  />
+        <a href="http://montagnasymposium.org/support.html" target="_blank">See current Montagna Symposium supporters</a>
+        <br  /><br  />
       </div>
     </section>
     <section id="footer">
       <!-- SMALL SCREEN -->
       <div class="d-sm-block d-md-none">
       <div class="container-fluid center">
-        <p class="center">
+        <div class="center">
           <h4>Contact</h4>
-          <br />
-          Name Name
-          <br />
-          Address Address
-          <br />
-          Address Address
-          <br />
-          +1 (555) 555 5555
-          <br />
-          Facebook
-        </p>
-        <br />
-        <div class="center" style="max-width: 200px">
-            <img src="images/favicon.png" alt="BSF_logo" width="100%" />
+          <p>
+            Name Name
+            <br />
+            Address Address
+            <br />
+            Address Address
+            <br />
+            +1 (555) 555 5555
+            <br />
+            Facebook
+          </p>
+
         </div>
         <br />
+        <div class="center" style="max-width: 250px">
+            <img src="images/BSF_color_logo_cells.png" alt="BSF_logo" width="100%" />
+        </div>
         <br />
+
         <p>
           <h4>More Info</h4>
-          <br />
+
         </p>
-        <button class="founder-button center">Register for the Symposium</button>
+        <a href="https://www.eventbrite.com/e/the-68th-annual-montagna-symposium-on-the-biology-of-skin-decoding-complex-skin-disease-integrating-registration-53666402655" class="founder-button center">Register for the Symposium</a>
         <br  />
         <hr class="light-hr" />
         <a href="http://montagnasymposium.org/"><img src="images/Montagna_masthead_green_shorter.png" alt="Montagna_Symposium_on_the_Biology_of_Skin_masthead" width="100%"/></a>
@@ -132,13 +141,13 @@
                 <br />
                 +1 (555) 555 5555
                 <br />
-                Facebook
+                Info@biologyofskinfoundation.org
               </p>
 
             </div>
             <div class="col col-12 col-md-4" >
               <div class="center" style="max-width: 300px">
-                  <img src="images/favicon.png" alt="BSF_logo" width="100%" />
+                  <img src="images/BSF_color_logo_cells.png" alt="BSF_logo" width="100%" />
               </div>
             </div>
             <div class="col col-12 col-md-4" style="text-align: right">
@@ -146,17 +155,19 @@
                 More Info
               </h4>
               <br />
-              <button class="founder-button float-right">Register for the Symposium</button>
+              <a target="_blank" href="https://www.eventbrite.com/e/the-68th-annual-montagna-symposium-on-the-biology-of-skin-decoding-complex-skin-disease-integrating-registration-53666402655" class="founder-button float-right">Register for the Symposium</a>
             </div>
           </div>
           <br />
           <hr class="light-hr" />
-          <a href="http://montagnasymposium.org/"><img src="images/Montagna_masthead_green.png" alt="Montagna_Symposium_on_the_Biology_of_Skin_masthead" width="100%"/></a>
+          <a target="_blank" href="http://montagnasymposium.org/"><img src="images/Montagna_masthead_green.png" alt="Montagna_Symposium_on_the_Biology_of_Skin_masthead" width="100%"/></a>
           <hr class="light-hr" />
         </div>
       </div>
       <div class="center container-fluid">
-        &copy Copyright 2019 The Biology of Skin Foundation
+        <p>
+          &copy Copyright 2019 The Biology of Skin Foundation
+        </p>
       </div>
     </section>
     <!-- Scripts -->
