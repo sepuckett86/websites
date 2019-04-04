@@ -16,6 +16,7 @@ html {
 body {
   padding-top: 76px; /* Space for fixed navbar */
   /* scroll-snap-type: y proximity; */
+  background-color: #F1F2F2;s
 }
 
 section {
