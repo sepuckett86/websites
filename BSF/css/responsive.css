@@ -18,6 +18,9 @@
     margin-top: -80px; /* same height as header plus extra space */
     visibility: hidden;
   }
+  #carouselTestimonials img {
+    height: 60vh;
+  }
  }
 
 /* Navbar switches to collapsed */

@@ -64,6 +64,10 @@ section {
   background-color: #F1F2F2;
 }
 
+#carouselTestimonials p {
+  overflow: scroll;
+}
+
 #symposium {
   background-color: #F1F2F2;;
 }
@@ -92,7 +96,7 @@ section {
   padding-bottom: 30px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -199,6 +203,7 @@ Do not include image in same div as text -- put text outside of image div
   text-align: center;
   transition: opacity 0.15s ease;
   margin: 0px;
+  width: 100%;
 }
 
 .centered-container {
@@ -230,4 +235,8 @@ Do not include image in same div as text -- put text outside of image div
 
 .masthead-height {
   height: 75%;
+}
+
+.testimonial-image {
+  filter: brightness(70%);
 }
