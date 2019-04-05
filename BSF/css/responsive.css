@@ -1,5 +1,8 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  #carouselTestimonials p {
+    font-size: 1.1rem;
+  }
 }
 
 
@@ -14,12 +17,9 @@
   /* To account for navbar while scrolling */
   .anchor {
     display: block;
-    height: 80px; /* same height as header plus extra space */
-    margin-top: -80px; /* same height as header plus extra space */
+    height: 60px; /* same height as header plus extra space */
+    margin-top: -60px; /* same height as header plus extra space */
     visibility: hidden;
-  }
-  #carouselTestimonials img {
-    height: 60vh;
   }
  }
 
@@ -37,5 +37,8 @@
   }
   .masthead-height {
     height: 100%;
+  }
+  #carouselTestimonials img {
+    height: 65vh;
   }
 }
