@@ -22,6 +22,14 @@ section {
   background-color: #F1F2F2;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
 .scroll-snap {
   /* scroll-snap-align: start; */
 }
@@ -94,14 +102,6 @@ section {
   background-color: #2B2B2B;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-p {
-  font-family: 'Raleway', sans-serif;
 }
 
 .navbar {
@@ -242,4 +242,20 @@ Do not include image in same div as text -- put text outside of image div
 
 .testimonial-image {
   filter: brightness(70%);
+}
+
+.width_100 {
+  width: 100%;
+}
+
+.height_100 {
+  height: 100%;
+}
+
+h1 {
+  padding-top: 4rem;
+}
+
+h2 {
+  padding-top: 3rem;
 }
