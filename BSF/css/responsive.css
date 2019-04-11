@@ -21,6 +21,9 @@
     margin-top: -60px; /* same height as header plus extra space */
     visibility: hidden;
   }
+  .responsive-padding {
+    padding: 0% 0% 0% 0%;
+  }
  }
 
 /* Navbar switches to collapsed */
