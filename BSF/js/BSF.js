@@ -7,7 +7,7 @@ $(document).ready(function(){
 // To add box shadow after scroll
 
   var scrollLocation = $(window).scrollTop();
-  var introHeight = $('#intro').height();
+  var introHeight = $('.intro').height();
   // On scroll
   $(window).scroll(function(){
     // Set scroll location

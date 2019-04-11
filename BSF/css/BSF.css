@@ -267,3 +267,8 @@ h2 {
 h3 {
   padding-top: 2rem;
 }
+
+#montagnaPhotos img {
+  overflow: hidden;
+  object-fit: cover;
+}
