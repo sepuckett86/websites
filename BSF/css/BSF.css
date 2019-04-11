@@ -272,3 +272,7 @@ h3 {
   overflow: hidden;
   object-fit: cover;
 }
+
+.responsive-padding {
+  padding: 0% 15% 0% 15%;
+}
