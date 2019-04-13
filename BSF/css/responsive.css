@@ -45,3 +45,11 @@
     height: 65vh;
   }
 }
+
+@media (min-width: 1400px) {
+  #main {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
