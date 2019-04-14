@@ -273,6 +273,14 @@ h3 {
   object-fit: cover;
 }
 
+#home_carousel img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  filter: brightness(100%);
+  vertical-align: middle;
+}
+
 .responsive-padding {
   padding: 0% 15% 0% 15%;
 }
