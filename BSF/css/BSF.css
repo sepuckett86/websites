@@ -273,6 +273,30 @@ h3 {
   object-fit: cover;
 }
 
+#home_carousel img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  filter: brightness(100%);
+  vertical-align: middle;
+}
+
 .responsive-padding {
   padding: 0% 15% 0% 15%;
+}
+
+/* make all cards in row the same height */
+.row-same-height {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.row-same-height > div[class*='col-'] {
+  display: flex;
+}
+
+/* make all text in row the same height */
+.row-text-same-height {
+   display: flex;
+   flex-wrap: wrap;
 }

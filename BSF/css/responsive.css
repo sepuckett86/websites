@@ -11,9 +11,6 @@
   .carousel-row {
     height: 60vh;
   }
-  .carousel-row .column-1 {
-    filter: brightness(50%);
-  }
   /* To account for navbar while scrolling */
   .anchor {
     display: block;
@@ -23,6 +20,12 @@
   }
   .responsive-padding {
     padding: 0% 0% 0% 0%;
+  }
+  #home_carousel img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    filter: brightness(50%);
   }
  }
 
@@ -43,5 +46,16 @@
   }
   #carouselTestimonials img {
     height: 65vh;
+  }
+}
+
+@media (min-width: 1500px) {
+  #main {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #home_carousel .carousel-large {
+    height: 500px;
   }
 }
