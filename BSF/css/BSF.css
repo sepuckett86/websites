@@ -84,6 +84,27 @@ li {
   height: 30vw;
 }
 
+#Montagna_color {
+  background-image: url("../images/Montagna_color.png");
+  height: 60vh;
+  background-size: cover;
+  filter: brightness(70%);
+}
+
+#Montagna_monkey {
+  background-image: url("../images/Montagna_monkey.png");
+  height: 60vh;
+  background-size: cover;
+  filter: brightness(70%);
+}
+
+#Lobitz {
+  background-image: url("../images/Lobitz.png");
+  height: 60vh;
+  background-size: cover;
+  filter: brightness(70%);
+}
+
 #mission .card {
   margin-bottom: 15px;
 }
@@ -291,11 +312,6 @@ h2 {
 
 h3 {
   padding-top: 2rem;
-}
-
-#montagnaPhotos img {
-  overflow: hidden;
-  object-fit: cover;
 }
 
 #home_carousel img {
