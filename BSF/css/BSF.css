@@ -14,7 +14,7 @@ html {
 body {
   padding-top: 76px; /* Space for fixed navbar */
   /* scroll-snap-type: y proximity; */
-  background-color: #F1F2F2;s
+  background-color: #F1F2F2;
 }
 
 section {
@@ -71,13 +71,38 @@ li {
   background-color: #F1F2F2;
 }
 
+#home_carousel .carousel-small .carousel-item {
+  height: 60vh;
+}
+
 #home_carousel .carousel-large {
   height: 30vw;
   background-color: #F1F2F2;
 }
 
-#carouselTestimonials img {
+#home_carousel .carousel-large .carousel-item {
+  height: 30vw;
+}
+
+#mission .card {
+  margin-bottom: 15px;
+}
+
+#carouselTestimonials {
+  /* Vertical Align Text */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* makes bg more transparent without also doing that to text */
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/cloud_wave_shore.png");
+  background-size: cover;
+  padding: 3%;
   border-radius: 10px;
+  height: 45vh;
+}
+
+#carouselTestimonials .carousel-item {
+  height: 45vh;
 }
 
 #symposium {
@@ -295,8 +320,6 @@ h3 {
   display: flex;
 }
 
-/* make all text in row the same height */
-.row-text-same-height {
-   display: flex;
-   flex-wrap: wrap;
+.padding-bottom-list li {
+  padding-bottom: 0.5em;
 }

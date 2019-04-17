@@ -44,7 +44,10 @@
   .masthead-height {
     height: 100%;
   }
-  #carouselTestimonials img {
+  #carouselTestimonials {
+    height: 65vh;
+  }
+  #carouselTestimonials .carousel-item {
     height: 65vh;
   }
 }
