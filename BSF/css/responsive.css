@@ -1,7 +1,21 @@
 /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 300px) {
+  #carouselTestimonials p {
+    font-size: 1.1rem!important;
+  }
+  #carouselTestimonials {
+    height: 80vh!important;
+  }
+  #carouselTestimonials .carousel-item {
+    height: 80vh!important;
+  }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   #carouselTestimonials p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
