@@ -71,9 +71,17 @@ li {
   background-color: #F1F2F2;
 }
 
+#home_carousel .carousel-small .carousel-item {
+  height: 60vh;
+}
+
 #home_carousel .carousel-large {
   height: 30vw;
   background-color: #F1F2F2;
+}
+
+#home_carousel .carousel-large .carousel-item {
+  height: 30vw;
 }
 
 #mission .card {
