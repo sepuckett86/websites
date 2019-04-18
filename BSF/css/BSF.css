@@ -84,18 +84,18 @@ li {
   height: 30vw;
 }
 
-#Montagna_color {
-  background-image: url("../images/Montagna_color.png");
+#Montagna_apparatus {
+  background-image: url("../images/Montagna_apparatus.jpg");
   height: 60vh;
   background-size: cover;
   filter: brightness(70%);
 }
 
-#Montagna_monkey {
-  background-image: url("../images/Montagna_monkey.png");
+#Bill_Montagna {
+  background-image: url("../images/Bill_Montagna.jpg");
   height: 60vh;
   background-size: cover;
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 
 #Lobitz {
