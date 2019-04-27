@@ -52,6 +52,27 @@ li {
   padding-left: 0px;
 }
 
+#home_carousel .gradient-right img {
+  /*  To contain the image to the confines of the div  */
+  max-width: 100%;
+}
+
+#home_carousel .gradient-right{
+  max-width: 100%;
+  margin: auto;
+  background-size: cover;
+}
+
+#home_carousel .gradient-right::after {
+  display: block;
+  position: relative;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0, #fff 100%);
+  width: 100%;
+  height: 30vw;
+  margin-right: -150px;
+  content: '';
+}
+
 #home_carousel .carousel-large .column-2 {
   height: 100%;
   /* Vertical Align Text */
