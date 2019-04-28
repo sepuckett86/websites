@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
 }
 
 li {
@@ -359,4 +360,9 @@ h3 {
 
 .padding-bottom-list li {
   padding-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.emphasize {
+
 }
