@@ -367,6 +367,11 @@ h3 {
   font-size: 1.2em;
 }
 
-.emphasize {
+#filter label {
+  margin: 20px;
+  font-family: 'Raleway', sans-serif;
+}
 
+table {
+  font-family: 'Raleway', sans-serif;
 }
