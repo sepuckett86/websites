@@ -369,4 +369,9 @@ h3 {
 
 #filter label {
   margin: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+table {
+  font-family: 'Raleway', sans-serif;
 }
