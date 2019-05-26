@@ -5,7 +5,8 @@ import filterSymposia from './filter-symposia.js';
 const input = document.getElementById('filter-input');
 const order = document.getElementById('order-input');
 
-renderTableRows(data);
+sortAndFilter(data);
+
 input.addEventListener('input', () => {
     sortAndFilter(data);
 });

@@ -26,8 +26,54 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-background navbar-light fixed-top">
+            <div class="d-flex flex-grow-1">
+                <!-- OPTIONAL spacer to center brand on mobile
+                <span class="w-100 d-lg-none d-block">
+                </span>
+                -->
+                <!-- For phone size (small)-->
+                <a class="navbar-brand d-sm-block d-md-none" href="index.html">
+                    <img class="favicon" src="images/favicon_borderless.png" alt="BSF_favicon" height="100%"/>
+                </a>
+                <!-- For intermediate (medium)-->
+                <a class="navbar-brand d-none d-md-block" href="index.html">
+                    <img class="favicon" src="images/favicon_borderless.png" alt="BSF_favicon" height="100%"/>
+                    <img class="masthead-height" src="images/bsfMasthead.png" alt="BSF_masthead" />
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bsf_navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="bsf_navbar">
+                <ul class="navbar-nav ml-auto flex-nowrap ">
+                    <!-- Only show button at top of list in collapsed format (small)-->
+                    <li class="nav-item d-md-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse.show">
+                      <a href="founder.html" class="float-right founder-button">Become a Founder</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a href="index.html#mission-anchor" class="nav-link">Mission</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a href="index.html#symposium-anchor" class="nav-link">Symposium</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a href="index.html#donate-anchor" class="nav-link">Donate</a>
+                    </li>
+  
+                    <!-- Only show button at end of list in large screen de-collapsed (large)-->
+                    <li class="nav-item d-none d-lg-block d-xl-block">
+                      <a href="founder.html" class="founder-button" style="margin-left: 0.5em">Become a Founder</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </header>
   <main>
-    <section id="title" class="container">
+    <section id="title" class="container intro">
       <h1>Montagna Symposium: List of Past Themes and Chairs</h1>
     </section>
     <section id="filter" class="container">
@@ -60,6 +106,94 @@
       </tbody>
     </table>
     </section>
+    <br />
   </main>
-  <script type="module" src="js/symposium_table.js"></script>
+  <section id="footer">
+      <!-- SMALL SCREEN -->
+      <div class="d-sm-block d-md-none">
+      <div class="container-fluid center">
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:info@biologyofskinfoundation.org">info@biologyofskinfoundation.org</a>
+        </p>
+        <p>
+          Biology of Skin Foundation
+          <br />
+          c/o Molly Kulesz-Martin, Ph.D.
+          <br />
+          Mail code: L468R
+          <br />
+          3181 SW Sam Jackson Park Rd.
+          <br />
+          Portland, OR 97239
+        </p>
+        <br />
+        <div class="center" style="max-width: 250px">
+            <img src="images/BiologyofSkinFoundation_logo_color.png" alt="BSF_logo" class="width_100" />
+        </div>
+        <br />
+        <h4>More Info</h4>
+        <a href="https://www.eventbrite.com/e/the-68th-annual-montagna-symposium-on-the-biology-of-skin-decoding-complex-skin-disease-integrating-registration-53666402655" class="founder-button center">Register for the Symposium</a>
+        <br  />
+        <hr class="light-hr" />
+        <a href="http://montagnasymposium.org/"><img src="images/Montagna_masthead_green_shorter.png" alt="Montagna_Symposium_on_the_Biology_of_Skin_masthead" class="width_100"/></a>
+        <hr class="light-hr" />
+      </div>
+      </div>
+
+      <!-- LARGE SCREEN -->
+      <div class="d-none d-md-block">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-md-4">
+              <h4>Contact</h4>
+              <br />
+              <p>
+                <a href="mailto:info@biologyofskinfoundation.org">info@biologyofskinfoundation.org</a>
+              </p>
+              <p>
+                Biology of Skin Foundation
+                <br />
+                c/o Molly Kulesz-Martin, Ph.D.
+                <br />
+                Mail code: L468R
+                <br />
+                3181 SW Sam Jackson Park Rd.
+                <br />
+                Portland, OR 97239
+              </p>
+
+            </div>
+            <div class="col col-12 col-md-4" >
+              <div class="center" style="max-width: 300px">
+                  <img src="images/BiologyofSkinFoundation_logo_color.png" alt="BSF_logo" class="width_100" />
+              </div>
+            </div>
+            <div class="col col-12 col-md-4" style="text-align: right">
+              <h4>
+                More Info
+              </h4>
+              <br />
+              <a target="_blank" href="https://www.eventbrite.com/e/the-68th-annual-montagna-symposium-on-the-biology-of-skin-decoding-complex-skin-disease-integrating-registration-53666402655" class="founder-button float-right">Register for the Symposium</a>
+            </div>
+          </div>
+          <br />
+          <hr class="light-hr" />
+          <a target="_blank" href="http://montagnasymposium.org/"><img src="images/Montagna_masthead_green.png" alt="Montagna_Symposium_on_the_Biology_of_Skin_masthead" class="width_100"/></a>
+          <hr class="light-hr" />
+        </div>
+      </div>
+      <div class="center container-fluid">
+        <p style="margin-bottom: 0px">
+          &copy; Copyright 2019 The Biology of Skin Foundation
+        </p>
+        <p style="color: #686868; font-size: 0.8em;">
+          Website Design by Susan Puckett
+        </p>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script type="module" src="js/symposium_table.js"></script>
+    <script src="js/BSF.js"></script>
 </body>
