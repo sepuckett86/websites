@@ -3,19 +3,27 @@ import sortSymposia from './sort-symposia.js';
 import filterSymposia from './filter-symposia.js';
 
 const input = document.getElementById('filter-input');
+const order = document.getElementById('order-input');
 
 renderTableRows(data);
 input.addEventListener('input', () => {
-    const filtered = filterSymposia(data, {
-        text: input.value
-    });   
-    renderTableRows(filtered);
+    sortAndFilter(data);
 });
 
-const sorted = sortSymposia(data, {
-    property: 'YEAR',
-    direction: -1
-})
+order.addEventListener('input', () => {
+    sortAndFilter(data);
+});
+
+function sortAndFilter(data) {
+    const sorted = sortSymposia(data, {
+        property: 'YEAR',
+        direction: order.value
+    });
+    const filtered = filterSymposia(sorted, {
+        text: input.value
+    });
+    renderTableRows(filtered);
+}
 
 function renderTableRows(data) {
     const tableBody = document.getElementById('table-body');
