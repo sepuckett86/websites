@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Biology of Skin Foundation</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Home of the Biology of Skin Foundation" />
+
+  <!-- Temporary meta tag to prevent search engines from finding the page -->
+  <meta name="robots" content="noindex" />
+
+  <!-- Bootstrap 4.3 requires this meta tag for responsive design-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon link -->
+  <link href="images/favicon_borderless.png" type="image/png" rel="icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!-- Link to CSS stylesheets -->
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+  <link href="css/BSF.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <section id="filter" class="container">
+      <label>Search: 
+        <input id="filter-input" type="text" name="filter">
+      </label>
+    </section>
+    <section id="data" class="container">
+    <table id="symposium-table" class="table">
+      <thead>
+        <tr>
+          <th>
+            <p>YEAR</p>
+          </th>
+          <th>
+            <p>TITLE</p>
+          </th>
+          <th>
+            <p>PROGRAM CHAIR/COMM</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+    </section>
+  </main>
+  <script type="module" src="js/symposium_table.js"></script>
+</body>
