@@ -1,4 +1,4 @@
-import data from '../data/example-data.js';
+import data from '../data/symposia-data.js';
 import sortSymposia from './sort-symposia.js';
 import filterSymposia from './filter-symposia.js';
 
