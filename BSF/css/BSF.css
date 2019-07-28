@@ -39,6 +39,10 @@ li {
   font-family: 'Raleway', sans-serif;
 }
 
+.founder {
+  font-size: 1.2rem;
+}
+
 #masthead {
   text-align: center;
   background-color: #F1F2F2;
