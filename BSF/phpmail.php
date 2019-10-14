@@ -7,6 +7,42 @@ if (!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['message'
   exit;
 }
 
+// check reCAPTCHA 2
+
+function isValid() 
+{
+    try {
+        include 'secrets.php';
+        $url = 'https://www.google.com/recaptcha/api/siteverify';
+        $data = ['secret'   => $secretRecaptchaKey,
+                 'response' => $_POST['g-recaptcha-response'],
+                 'remoteip' => $_SERVER['REMOTE_ADDR']];
+
+        $options = [
+            'http' => [
+                'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+                'method'  => 'POST',
+                'content' => http_build_query($data) 
+            ]
+        ];
+
+        $context  = stream_context_create($options);
+        $result = file_get_contents($url, false, $context);
+        return json_decode($result)->success;
+    }
+    catch (Exception $e) {
+        return null;
+    }
+}
+
+if(!isValid()) {
+  echo "<h1>Error</h1>\n
+  <p>reCAPTCHA verification failed. Please make sure to check the 'I'm not a robot' box and resubmit form again.</p>\n
+  <button><a href='donate_form.html'>Back</a></button>";
+
+  exit;
+}
+
 // sanitize inputs
 $unsanitizedName = htmlspecialchars($_POST['name']);
 $name = filter_var($unsanitizedName, FILTER_SANITIZE_STRING);
@@ -49,22 +85,16 @@ $finalMessage = "
 ";
 
 // send email
-mail($to, $subject, $finalMessage, $headers);
-?>
+$success = mail($to, $subject, $finalMessage, $headers);
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact Form</title>
-</head>
-<body>
-    <h1>Thank You</h1>
-    <p>Here is the information you have submitted:</p>
-    <ol>
-        <li><em>Name:</em> <?php echo $name?></li>
-        <li><em>Email:</em> <?php echo $email?></li>
-        <li><em>Message:</em> <?php echo $message?></li>
-    </ol>
-</body>
-</html>
+// go to Paypal
+
+if ($success == 1) {
+  $paypalUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6MPTTY4GX3UGL&source=url';
+  header( "Location: $paypalUrl" ); 
+} else {
+  echo "<h1>Error</h1>\n
+     <p>Information not sent successfully. Please email info@biologyofskinfoundation.org to complete your donation instead.</p>";
+  exit;
+}
+?>
