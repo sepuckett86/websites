@@ -23,68 +23,72 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-background navbar-light fixed-top">
-            <div class="d-flex flex-grow-1">
-                <!-- OPTIONAL spacer to center brand on mobile
-                <span class="w-100 d-lg-none d-block">
-                </span>
-                -->
-                <!-- For phone size (small)-->
-                <a class="navbar-brand d-sm-block d-md-none" href="index.html">
-                    <img class="favicon" src="images/favicon_borderless.png" alt="BSF_favicon" height="100%"/>
-                </a>
-                <!-- For intermediate (medium)-->
-                <a class="navbar-brand d-none d-md-block" href="index.html">
-                    <img class="favicon" src="images/favicon_borderless.png" alt="BSF_favicon" height="100%"/>
-                    <img class="masthead-height" src="images/bsfMasthead.png" alt="BSF_masthead" />
-                </a>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bsf_navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-background navbar-light fixed-top">
+        <div class="d-flex flex-grow-1">
+            <!-- OPTIONAL spacer to center brand on mobile
+            <span class="w-100 d-lg-none d-block">
+            </span>
+            -->
+            <!-- For phone size (small)-->
+            <a class="navbar-brand d-sm-block d-md-none" href="index.html">
+                <img class="favicon" src="images/favicon_borderless.png" alt="BSF_favicon" height="100%"/>
+            </a>
+            <!-- For intermediate (medium)-->
+            <a class="navbar-brand d-none d-md-block" href="index.html">
+                <img class="favicon" src="images/favicon_borderless.png" alt="BSF_favicon" height="100%"/>
+                <img class="masthead-height" src="images/bsfMasthead.png" alt="BSF_masthead" />
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bsf_navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="bsf_navbar">
-                <ul class="navbar-nav ml-auto flex-nowrap ">
-                    <!-- Only show button at top of list in collapsed format (small)-->
-                    <li class="nav-item d-md-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse.show">
-                      <a href="founder.html" class="float-right founder-button">Become a Founder</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a href="#mission-anchor" class="nav-link">Mission</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a href="#symposium-anchor" class="nav-link">Symposium</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a href="#donate-anchor" class="nav-link">Donate</a>
-                    </li>
-  
-                    <!-- Only show button at end of list in large screen de-collapsed (large)-->
-                    <li class="nav-item d-none d-lg-block d-xl-block">
-                      <a href="founder.html" class="founder-button" style="margin-left: 0.5em">Become a Founder</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div id="masthead" class="d-md-none">
-          <img src="images/bsfMasthead.png" alt="BSF_masthead" class="width_100" />
         </div>
-      </header>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="bsf_navbar">
+            <ul class="navbar-nav ml-auto flex-nowrap ">
+                <!-- Only show button at top of list in collapsed format (small)-->
+                <li class="nav-item d-md-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a href="founder.html" class="float-right founder-button">Become a Founder</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a href="index.html#mission-anchor" class="nav-link">Mission</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a href="index.html#symposium-anchor" class="nav-link">Symposium</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a href="index.html#donate-anchor" class="nav-link">Donate</a>
+                </li>
+
+                <!-- Only show button at end of list in large screen de-collapsed (large)-->
+                <li class="nav-item d-none d-lg-block d-xl-block">
+                  <a href="founder.html" class="founder-button" style="margin-left: 0.5em">Become a Founder</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </header>
       <main>
-          <div class="container">
+          <section class="container">
           <h1>Donation Information</h1>
+          <span class="intro"></span>
+          <br />
           <p>Thank you for supporting the Biology of Skin Foundation and the Montagna Symposium.</p>
-          <p>This form is for online giving and will direct you towards Paypal.</p>
-          <p>Please note that 2.2% of your donation will go towards Paypal transaction fees. To avoid these fees, you may send a check or perform a wire transfer, as described on the <a href="https://biologyofskinfoundation.org/founder.html">Become a Founder</a> page.</p>
-          <form action="phpmail.php" method="post">
+          <p>This form is for online giving and will direct you towards PayPal.</p>
+          <p class="alert">Important: Credit or debit card users, please note that 2.2% of your donation will go towards PayPal transaction fees. To avoid these fees, you may donate from your own PayPal account, send a check or perform a wire transfer. See the <a href="https://biologyofskinfoundation.org/founder.html#donate-anchor">Become a Founder</a> page for more info.</p>
+          <form action="phpmail.php" method="post" class="donation-form">
               Name: <input type="text" name="name" required><br>
               E-mail: <input type="email" name="email" required><br>
+              Amount: <label><input type="radio" name="amount" value="100">$25</label>
+                      <label><input type="radio" name="amount" value="100">$100</label>
+                      <label><input type="radio" name="amount" value="250">$250</label>
+                      <label><input type="radio" name="amount" value="1000">$1000</label>
+                      <label><input type="radio" name="amount" value="2500">$2500</label>
+                      <label><input type="radio" name="amount" value="Other">Other<input type="text" name="other"></label><br>
               Message: <textarea type="text" name="message" required></textarea><br>
               <div class="g-recaptcha" data-sitekey="6LcSaL0UAAAAAEYgym9kWGFhkPInFKUWq6pJo_Ua"></div>
-              <button class="founder-button" type="submit">Submit and Continue to PayPal </button>
-              <img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/logo-center/9_bdg_secured_by_pp_2line.png" alt="Secured by Paypal">
+              <button class="founder-button" type="submit">Submit and Continue <img class="paypal-image" src="images/paypal_logo.jpg" alt="Secured by Paypal"></button>
           </form>
           <br />
           <br />
